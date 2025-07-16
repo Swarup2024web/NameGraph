@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Name Curve Plotter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Name to Graph Art ✨</h1>
+
+    <div class="input-group">
+      <label>Enter your name:</label>
+      <input type="text" id="nameInput" placeholder="e.g. Swarup" />
+    </div>
+
+    <div class="range-group">
+      <label>Range:</label>
+      <input type="number" id="xStart" value="-10" />
+      <input type="number" id="xEnd" value="10" />
+    </div>
+
+    <div class="control-group">
+      <label>Animation Speed:</label>
+      <input type="range" id="speedSlider" min="1" max="100" value="30" />
+    </div>
+
+    <div class="button-group">
+      <button onclick="plotNameCurve()">🎨 Plot Graph</button>
+    </div>
+
+    <canvas id="graphCanvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
